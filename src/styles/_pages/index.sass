@@ -1,0 +1,454 @@
+body
+	.banner1
+		.items
+			figure
+				position: relative
+				img
+					max-width: 100%
+					width: 100%
+				figcaption
+					padding: 1rem
+					color: darken(white,5%)
+					text-align: center
+					background: #353b48
+					h2
+						font-size: 1rem
+					h4
+						font-size: .8rem
+		+media-breakpoint-up(md)
+			.items
+				figure
+					img
+						max-width: 100%
+						width: 100%
+					figcaption
+						width: 100%	
+						position: absolute
+						bottom: 0
+						left: 0
+						padding: 1rem
+						color: darken(white,5%)
+						text-align: center
+						background: linear-gradient(0deg, #060606, #f8f9fa05)
+						h2
+							font-size: 1rem
+						h4
+							font-size: .8rem
+		+media-breakpoint-up(lg)
+			.items
+				figure
+					img
+						max-width: 100%
+						width: 100%
+					figcaption
+						width: 100%	
+						position: absolute
+						bottom: 0
+						left: 0
+						padding: 1rem
+						color: darken(white,5%)
+						text-align: center
+						background: linear-gradient(0deg, #060606, #f8f9fa05)
+						h2
+							font-size: 2rem
+						h4
+							font-size: 1.3rem
+			.owl-nav
+				.owl-prev
+					width: 2rem
+					height: 2rem
+					background: #2c3e50
+					position: absolute
+					bottom: 10rem
+					right: 0
+					color: #dfdfdf
+				.owl-next
+					width: 2rem
+					height: 2rem
+					background: #2c3e50
+					position: absolute
+					bottom: 10rem
+					left: 0
+					color: #dfdfdf
+		+media-breakpoint-up(xl)
+			.item
+				img
+					width: 100%
+					position: relative
+				.boxtext
+					position: absolute
+					top: 80%
+					left: 50%
+					transform: translateX(-50%) translateY(-50%)
+					color: white
+					text-align: center
+					h2
+						font-size: 2.5rem
+					h4
+						font-size: 1.8rem
+			.owl-nav
+				.owl-prev
+					width: 2rem
+					height: 2rem
+					background: #2c3e50
+					position: absolute
+					bottom: 15rem
+					right: 0
+					color: #dfdfdf
+				&:hover,&:active
+					background: #74b9ff
+				.owl-next
+					width: 2rem
+					height: 2rem
+					background: #2c3e50
+					position: absolute
+					bottom: 15rem
+					left: 0
+					color: #dfdfdf
+				&:hover,&:active
+					background: #74b9ff
+	.intro
+		background: white
+		h2
+			position: relative
+			font-weight: bold
+			margin-bottom: 8rem
+			&:before
+				content: ''
+				display: block
+				width: 5rem
+				height: .2rem
+				background: #74b9ff
+				position: absolute
+				top: 120%
+				left: 50%
+				transform: translateX(-50%) translateY(-50%)
+			&:after
+				content: ''
+				display: block
+				width: 1rem
+				height: 1rem
+				position: absolute
+				border: 2px solid #74b9ff
+				border-radius: 50%
+				transform: translateX(-50%) translateY(-50%)
+				top: 120%
+				left: 50%
+				background: white
+
+		figure
+			.box
+				position: relative
+				img
+					filter: grayscale(100%)
+					max-width: 100%
+					width: 100%
+			figcaption
+				date,p
+					color: darken(whitesmoke,30%)
+			&:hover
+				.box
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						left: 0
+						top: 0
+						width: 100%
+						height: 100%
+						box-shadow: 0 0 0 5px #3498db inset
+					img
+						filter: grayscale(0%)
+				figcaption
+					h4
+						color: #74b9ff
+					p
+						color: black
+		+media-breakpoint-up(md)
+			h2
+				font-size: 3rem
+				font-weight: bold
+	.banner2
+		background: #dfdfdf url('../img/home_banner2.png') no-repeat center center
+		background-size: 100% 100%
+		h2
+			font-weight: bold
+			&:before
+				content: ''
+				display: block
+				width: 20rem
+				height: .2rem
+				background: #74b9ff
+				position: absolute
+				top: 75%
+				left: 50%
+				transform: translateX(-50%) translateY(-50%)
+			&:after
+				content: ''
+				display: block
+				width: 1rem
+				height: 1rem
+				position: absolute
+				border: 2px solid #74b9ff
+				border-radius: 50%
+				transform: translateX(-50%) translateY(-50%)
+				top: 75%
+				left: 50%
+				background: white
+		figure
+			.box-font-awesome
+				i
+					font-size: 5rem
+					font-weight: bold
+			figcaption
+				.text
+					color: darken(whitesmoke,30%)
+			&:hover,&:active
+				.box-font-awesome
+					color: #74b9ff
+				figcaption
+					h4
+						color: #74b9ff
+		+media-breakpoint-up(md)
+			h2 
+				font-size: 3rem
+				font-weight: bold
+	.banner3
+		background: #dfdfdf url('../img/home_banner3.png') no-repeat center center 
+		background-size: 100% 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		h3
+			color: white
+			font-size: 1rem
+		a
+			border-radius: 2rem
+			background: #74b9ff
+			text-transform: uppercase
+		+media-breakpoint-up(md)
+				h3
+					font-size: 2rem
+				a
+					width: 14rem
+					height: 3.7rem
+					font-size: 1.5rem
+					border-radius: 2rem
+					background: #74b9ff
+					text-transform: uppercase
+	.list
+		background: white
+		h2
+			font-weight: bold
+			&:before
+				content: ''
+				display: block
+				width: 20rem
+				height: .2rem
+				background: #74b9ff
+				position: absolute
+				top: 60%
+				left: 50%
+				transform: translateX(-50%) translateY(-50%)
+			&:after
+				content: ''
+				display: block
+				width: 1rem
+				height: 1rem
+				position: absolute
+				border: 2px solid #74b9ff
+				border-radius: 50%
+				transform: translateX(-50%) translateY(-50%)
+				top: 60%
+				left: 50%
+				background: white
+		+media-breakpoint-up(md)
+			h2 
+				font-size: 3rem
+				font-weight: bold
+		nav
+			ul
+				li
+					display: inline-block
+					list-style-type: none
+					transform: translateX(-6%)
+					a
+						margin: 0 2px
+						padding: 4px
+						color: black
+						text-decoration: none
+						font-weight: bold
+						&:hover
+							background: #74b9ff
+							border-radius: 1rem
+							color: white
+		figure
+			.box-img
+				img
+					filter: grayscale(100%)
+					width: 100%
+			&:hover,&:active
+				.box-img
+					img
+						filter: grayscale(0)
+						box-shadow: 0 0 0 5px #74b9ff
+	.customer
+		background: #dfdfdf url('../img/home_background.png') no-repeat center center
+		background-size: 100% 100%
+
+		h2
+			font-weight: bold
+			&:before
+				content: ''
+				display: block
+				width: 12rem
+				height: .2rem
+				background: #74b9ff
+				position: absolute
+				top: 60%
+				left: 50%
+				transform: translateX(-50%) translateY(-50%)
+			&:after
+				content: ''
+				display: block
+				width: 1rem
+				height: 1rem
+				position: absolute
+				border: 2px solid #74b9ff
+				border-radius: 50%
+				transform: translateX(-50%) translateY(-50%)
+				top: 60%
+				left: 50%
+				background: white
+		figure
+			.box-img-customer
+				display: flex
+				align-items: center
+				justify-content: center
+				img
+					border-radius: 50%
+					box-shadow: 0 0 0 5px #74b9ff
+					margin-right: 7rem
+					transform: translateX(-77%)
+					margin: 3rem 10rem 3rem 14rem
+			figcaption
+				h5
+					font-style: italic
+				b
+					color: #74b9ff
+					font-size: 1.5rem
+			+media-breakpoint-up(md)
+				.box-img-customer
+					display: flex
+					align-items: center
+					justify-content: center
+					img
+						border-radius: 50%
+						box-shadow: 0 0 0 5px #74b9ff
+						margin-right: 7rem
+						transform: translateX(-35%)
+						margin: 3rem 10rem 3rem 14rem
+				figcaption
+					h5
+						padding: 0 10rem
+			+media-breakpoint-up(xl)
+				.box-img-customer
+					display: flex
+					align-items: center
+					justify-content: center
+					img
+						border-radius: 50%
+						box-shadow: 0 0 0 5px #74b9ff
+						margin-right: 7rem
+						transform: translateX(-20%)
+						margin: 3rem 10rem 3rem 14rem
+	.slider
+		background: white
+		.slide
+			.owl-carousel
+				.owl-nav
+					.owl-prev
+						width: 2rem
+						height: 2rem
+						background: #2c3e50
+						position: absolute
+						bottom: .5rem
+						left: -3rem
+						color: #dfdfdf
+					.owl-next
+						width: 2rem
+						height: 2rem
+						background: #2c3e50
+						position: absolute
+						bottom: .5rem
+						right: -3rem
+						color: #dfdfdf	
+	.infor
+		background: #3498db
+		color: white
+		.container
+			display: flex
+			align-items: center
+			justify-content: center
+			.text
+				margin-top: 1rem
+				margin-bottom: 1rem
+			.text3
+				margin-top: 1rem
+			.form
+				form
+					.form-group
+						label
+							font-size: 1.5rem
+							font-weight: bold
+						.form-control
+							position: relative
+							margin-bottom: 2rem
+						button
+							position: absolute
+							width: 5rem
+							height: 2rem
+							top: 61px
+							right: 18px
+							color: white
+							font-size: 1rem
+							text-align: center
+			+media-breakpoint-up(md)
+				.text3
+					margin-top: 4.85rem	
+	footer
+		background: #3F51B5
+		.copyright
+			display: flex
+			align-items: center
+			transform: translateY(-10%)
+		.fa.fa-twitter
+			width: 3rem
+			height: 3rem
+			background: gray
+			border-radius: 50%
+			position: relative
+			color: white
+			margin: .5rem .5rem
+			&:before
+				position: absolute
+				bottom: 14px
+				right: 14px
+			&:hover
+				background: white
+				color: black
+		.fa.fa-facebook
+			width: 3rem
+			height: 3rem
+			background: gray
+			border-radius: 50%
+			position: relative
+			color: white
+			margin: .5rem .5rem
+			&:before
+				position: absolute
+				bottom: 14px
+				right: 17px
+			&:hover
+				background: white
+				color: black
